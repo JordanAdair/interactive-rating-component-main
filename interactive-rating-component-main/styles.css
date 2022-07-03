@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Montserrat&family=Overpass:wght@400;600;700&display=swap");
+
+:root {
+	/* Color variables */
+	--primary: hsl(25, 97%, 53%);
+	--neutral-white: hsl(0, 0%, 94%);
+	--neutral-light-grey: hsl(216, 12%, 54%);
+	--neutral-medium-grey: #9ea5af;
+	--neutral-blue: #202731;
+	--neutral-dark-blue: #292e31;
+	--neutral-very-dark-blue: #141519;
+
+	/* Typography variables */
+	--body-copy-h1: 25px;
+	--body-copy-paragraph: 15px;
+	--button-submit: 16px;
+}
+
+/* Global styles/Margin reset */
+* {
+	margin: 0%;
+	padding: 0%;
+	font-family: "Overpass", sans-serif;
+	color: white;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: var(--neutral-very-dark-blue);
+}
+
+h1 {
+	font-size: var(--body-copy-h1);
+	font-weight: 600;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+p {
+	font-size: var(--body-copy-paragraph);
+	font-weight: 400;
+	color: var(--neutral-medium-grey);
+	margin-bottom: 25px;
+	margin-left: 10px;
+	line-height: 22px;
+}
+
+/* Rating wrapper */
+
+.rating-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-width: 350px;
+	min-height: 400px;
+	max-width: 350px;
+	max-height: 500px;
+	margin: 225px 275px 225px 275px;
+	padding: 0px 25px 0px 25px;
+	background-color: var(--neutral-blue);
+	border-radius: 5%;
+}
+
+/* Rating buttons */
+
+.rating-buttons {
+	display: flex;
+	justify-content: space-between;
+	border: none;
+	margin-right: 10px;
+}
+
+.rating-buttons input {
+	visibility: hidden;
+}
+
+.rating-buttons label {
+	color: var(--neutral-light-grey);
+	background-color: var(--neutral-dark-blue);
+	transition: all 0.25s ease-in-out;
+	cursor: pointer;
+	font-size: var(--button-submit);
+	margin-left: -10px;
+	padding: 20px;
+	border-radius: 50%;
+}
+
+.rating-buttons label:hover {
+	background-color: var(--primary);
+	color: var(--neutral-white);
+}
+
+/* Star icon */
+
+.star-icon {
+	width: 15px;
+	height: 15px;
+	padding: 15px;
+	margin-left: 7px;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	border-radius: 50%;
+	background-color: var(--neutral-dark-blue);
+}
+
+/* Submit button */
+
+.submit {
+	cursor: pointer;
+	background-color: var(--primary);
+	border: none;
+	border-radius: 20px;
+	min-height: 40px;
+	letter-spacing: 2px;
+	font-size: var(--button-submit);
+	font-weight: 600;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 10px;
+	margin-right: 10px;
+	transition: all 0.25s ease-in-out;
+}
+
+.submit:hover {
+	background-color: var(--neutral-white);
+	color: var(--primary);
+}
