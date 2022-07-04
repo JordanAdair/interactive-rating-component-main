@@ -21,6 +21,7 @@
 			.attribution {
 				font-size: 11px;
 				text-align: center;
+				margin-top: 10px;
 			}
 			.attribution a {
 				color: hsl(228, 45%, 44%);
@@ -40,33 +41,45 @@
 			</p>
 			<form>
 				<fieldset class="rating-buttons">
-					<input type="radio" id="rating-1" name="rating" />
+					<input type="radio" id="rating-1" name="rating" value="1" />
 					<label for="rating-1">1</label>
 
-					<input type="radio" id="rating-2" name="rating" />
+					<input type="radio" id="rating-2" name="rating" value="2" />
 					<label for="rating-2">2</label>
 
-					<input type="radio" id="rating-3" name="rating" />
+					<input type="radio" id="rating-3" name="rating" value="3" checked />
 					<label for="rating-3">3</label>
 
-					<input type="radio" id="rating-4" name="rating" />
+					<input type="radio" id="rating-4" name="rating" value="4" />
 					<label for="rating-4">4</label>
 
-					<input type="radio" id="rating-5" name="rating" />
+					<input type="radio" id="rating-5" name="rating" value="5" />
 					<label for="rating-5">5</label>
 				</fieldset>
 			</form>
-			<button class="submit" id="submit" type="submit">SUBMIT</button>
+			<button
+				class="submit"
+				id="submit"
+				type="submit"
+				onclick="initiateThankYouScreen()"
+			>
+				SUBMIT
+			</button>
 		</div>
 		<!-- Rating state end -->
 
 		<!-- Thank you state start -->
 
-		You selected
-		<!-- Add rating here -->
-		out of 5 Thank you! We appreciate you taking the time to give a rating. If
-		you ever need more support, don’t hesitate to get in touch!
-
+		<!-- Empty until submit is clicked, then loaded with "You selected (radio button value) out of 5." -->
+		<div class="thank-you-wrapper hidden">
+			<img src="./images/illustration-thank-you.svg" alt="Thank you image" />
+			<p class="radio-val"></p>
+			<h1>Thank you!</h1>
+			<p>
+				We appreciate you taking the time to give a rating. <br />
+				If you ever need more support, don’t hesitate to get in touch!
+			</p>
+		</div>
 		<!-- Thank you state end -->
 
 		<div class="attribution">
