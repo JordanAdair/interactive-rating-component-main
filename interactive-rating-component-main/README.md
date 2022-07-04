@@ -13,10 +13,8 @@ Users should be able to:
 - Select and submit a number rating
 - See the "Thank you" card state after submitting a rating
 
-### Screenshot
-
-![solution](https://user-images.githubusercontent.com/43575081/177069194-f4711792-d1d3-42b0-8f79-79e79b4a5b32.png)
-![solution2](https://user-images.githubusercontent.com/43575081/177069219-b2438008-65c2-42d7-a539-c8e58039fc5b.png)
+### Screenshots
+<img src="https://user-images.githubusercontent.com/43575081/177069433-fa282232-1bef-4603-a158-41cd89f121f7.png" width="320" height="240" /><img src="https://user-images.githubusercontent.com/43575081/177069440-fbefdc56-9070-4db8-b3b5-b651e77a6ae8.png" width="320" height="240" />
 
 
 ### Links
